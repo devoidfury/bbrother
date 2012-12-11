@@ -1,0 +1,24 @@
+{
+  "name": "bbrother",
+  "description": "Logging tool for the browser with remote options.",
+  "homepage": "http://github.com/devoidfury/bbrother",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "license":"MIT",
+  "maintainers": [
+    {
+      "name": "Thomas Hunkapiller",
+      "email": "tom@furycodes.com",
+      "url": "http://furycodes.com/"
+    }
+  ],
+  "dependencies": {
+    "uglify-js": "~2.2.2",
+    "nunjucks": "~0.1.6"
+  },
+  "bin": {
+    "bbrother": "bin/build.js"
+  }
+}

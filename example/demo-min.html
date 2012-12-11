@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <script type="text/javascript">
+        var bb_opts = {
+            sendCall:'http://localhost:5000/log/MYID',
+            callback:function (args, lvl) {
+                // executes whenever something is logged or on window.onerror
+                console.log.apply(null, args);
+            }
+        };
+    </script>
+    <script type="text/javascript" src="../dist/bb.min.js" id="bb"></script>
+
+    <script type="text/javascript">
+        try {
+            throw new Error("WTF!##@!!@");
+        } catch (e) {
+
+        }
+
+        bb.log('Test', "somevalue" /*, ...*/);
+
+        throw new Error("lol");
+
+    </script>
+</head>
+<body>
+
+</body>
+
+
+</html>
